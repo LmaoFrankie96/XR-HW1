@@ -327,7 +327,7 @@ Transform:
   m_GameObject: {fileID: 224415176}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 4.87, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -831,6 +831,8 @@ GameObject:
   m_Component:
   - component: {fileID: 772664585}
   - component: {fileID: 772664584}
+  - component: {fileID: 772664586}
+  - component: {fileID: 772664587}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -866,6 +868,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &772664586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772664583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e22b0ee3f81185248b45b91cc131db9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 1848029208}
+  action: {fileID: -631344258065148156, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
+  originalColor: {r: 1, g: 1, b: 1, a: 0}
+  newColor: {r: 1, g: 0.14234462, b: 0, a: 0}
+--- !u!114 &772664587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772664583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66446c17d5e85b4396ff5a5b7171ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 224415176}
+  rotationSpeed: 10
 --- !u!1 &880966193
 GameObject:
   m_ObjectHideFlags: 0
