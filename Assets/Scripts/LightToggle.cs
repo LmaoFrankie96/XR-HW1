@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class LightToggle : MonoBehaviour
 {
-    public Light light; // Reference to the Light component
+    public Light light1; // Reference to the Light component
     public InputActionReference action; // Input action for toggling
     public Color originalColor; // Original color of the light
     public Color newColor; // New color to toggle to
@@ -15,7 +15,7 @@ public class LightToggle : MonoBehaviour
     private void Start()
     {
         // Get the Light component from the GameObject
-        light = GetComponent<Light>();
+       // light = GetComponent<Light>();
 
         // Enable the input action
         action.action.Enable();
@@ -26,12 +26,13 @@ public class LightToggle : MonoBehaviour
             // Toggle between original and new color
             if (isOriginalColor)
             {
-                light.color = newColor;
+                light1.color = newColor;
             }
             else
             {
-                light.color = originalColor;
+                light1.color = originalColor;
             }
+            Debug.Log("Light changed");
 
             // Flip the state
             isOriginalColor = !isOriginalColor;

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PlayerPositionSwitcher : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class PlayerPositionSwitcher : MonoBehaviour
                 player.transform.position = roomPosition.position;
                 player.transform.rotation = roomPosition.rotation;
             }
-
+            Debug.Log("Position changed");
             // Toggle the state
             isInRoom = !isInRoom;
         }
